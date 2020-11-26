@@ -561,6 +561,9 @@ table p,.table p{margin:0}
 }
 
 /* 2020-11-26 updated */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 .navbar-brand.visible-xs {
     padding: 5px;
 }
@@ -578,8 +581,13 @@ body {
     background-color: #cce5dd;
 }
 footer img {
-    width: 200px;
+    width: 100%;
     margin-bottom: 10px;
+}
+@media screen and (min-width:480px) {
+    footer img {
+        width: 300px;
+    }
 }
 @media screen and (min-width:1200px) {
     footer img {
