@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*input 自訂樣貌*/
+.form img{max-width: 100%}
+/*讓form-inline、radio-inline、checkbox-inline之後的.form-control都能吃到相同設定*/
+.radio-inline .form-control,.checkbox-inline .form-control {
+    display: inline-block;width: auto;vertical-align: middle;}
+.radio .radio-inline,.checkbox .checkbox-inline{margin-right:15px;margin-left:0}
+.radio label, .checkbox label{padding-left: 24px}
+.radio input[type="radio"],.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],.checkbox-inline input[type="checkbox"]{
+    margin-left: -24px;
+    position: relative;
+    top: -2px;
+}
+
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus{
+    outline: none;
+    border: 3px;
+}
+.checkbox input[type="checkbox"]{
+    display: inline-block;
+    -webkit-appearance: none;
+    vertical-align:middle;
+    /*歸零初始化*/
+    margin-top:0;
+    background:#fff;
+    border:#999 solid 1px;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+.checkbox input[type="checkbox"]:checked {
+    background: #ff5200;
+    border-color: #ff5200;
+}
+.checkbox input[type=checkbox]:checked::after{
+    content: '';
+    top: 0;
+    left: 4px;
+    position: absolute;
+    background: transparent;
+    border: solid;
+    border-color: #ffffff;
+    border-width: 0 3px 3px 0;
+    width: 9px;
+    height: 15px;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+    transform: rotate(45deg);
+}
+
+.radio input[type="radio"]{
+    border-radius:50%;
+    display: inline-block;
+    -webkit-appearance: none;
+    vertical-align:middle;
+    /*歸零初始化*/
+    margin-top:0;
+    background:#fff;
+    border:1px solid #999;
+    min-height: 20px;
+    min-width: 20px;
+    margin-right: 4px;
+}
+.radio input[type="radio"]:checked {
+    background: #ffffff;
+    border-color: #ff5200;
+}
+.radio input[type="radio"]:checked::after {
+    content: '';
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    background: #ff5200;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+/*間距*/
+.form>.form-group{
+    border-bottom: 1px dashed #d9cecd;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.form-group .block{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
