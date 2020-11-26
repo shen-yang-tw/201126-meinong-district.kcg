@@ -586,3 +586,7 @@ footer img {
         width: 400px;
     }
 }
+.pagination-default .btn:focus, .pagination-default .btn:active, .pagination-default .btn:hover, .pagination-default .btn.active {
+    background-color: #21987b;
+    border-color: #197861;
+}
