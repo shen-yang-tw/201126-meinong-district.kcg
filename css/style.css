@@ -590,6 +590,10 @@ footer img {
     background-color: #21987b;
     border-color: #197861;
 }
-.bg-default, [class*="bg-pre"] {
+.bg-default, [class*="bg-pre"], .navbar-default {
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.navbar-default {
+    background-color: #fafefe;
+    border-color: #e7e7e7;
 }
